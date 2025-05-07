@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+}
+
+body::before,
+body::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+body::before {
+    clip-path: circle(30% at left 20%);
+    background-color: #966eca;
+}
+
+body::after {
+    clip-path: circle(25% at right 80%);
+    background-color: #966eca;
+}
+
+.contanir {
+    height: 80vh;
+    width: 90%;
+    background-color: rgb(102, 70, 161);
+    margin: auto;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    position: relative;
+}
+
+.contanir .text_box {
+    position: absolute;
+    top: 35%;
+    padding-left: 35px;
+
+}
+
+.contanir .text_box .title {
+    font-size: 18px;
+    color: #FFF;
+}
+
+.contanir .text_box .topec {
+    font-size: 15px;
+    color: #af79f7;
+    padding-top: 10px;
+}
+
+.contanir .up_box {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.contanir .up_box span {
+    color: #fff;
+    font-size: 18px;
+
+}
+
+.contanir .up_box .up ul {
+    list-style: none;
+    display: flex;
+}
+
+.contanir .up_box .up ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.contanir .up_box .up ul li a:hover {
+    color: #966eca;
+}
+
+.contanir .up_box .up ul li {
+    margin-right: 15px;
+}
+
+
+
+.contanir .up_box .buttons a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 5px;
+    background-color: #966eca;
+    padding: 3px 6px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.contanir .up_box .buttons a:hover {
+    transform: scale(0.95);
+}
